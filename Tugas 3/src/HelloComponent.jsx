@@ -1,5 +1,5 @@
 import React from 'react';
-import'./HelloComponent.css';
+import './HelloComponent.css';
 
 const HelloComponent= () => {
     return <p className='text-p'> Ini adalah 

@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import ReactDOM from 'react-dom'; 
-import React, {Component} from 'react'; 
+import React, {Component} from 'react';
 import HelloComponent from './HelloComponent';
 import Test from './LifecycleComponent';
+import FormLogin from './formLogin';
 
 function App() {
   return (
@@ -22,8 +23,13 @@ function App() {
           Learn React
         </a>
       </header>
-      <HelloComponent/>
-      <Test/>
+      <div class="praktikum">
+        <HelloComponent/>
+        <Test/>
+      </div>
+      <div>
+        <FormLogin/>
+      </div>
     </div>
   );
 }
