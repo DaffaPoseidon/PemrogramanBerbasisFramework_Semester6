@@ -1,0 +1,22 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "nama": "Nazario Safariesqi Tyo Widjaya",
+        "nim": "1941720233",
+        "alamat": "jl.raya setu metland cileungsi"
+      },
+      {
+        "id": 2,
+        "nama": "Daffa Cahyo Alghifari",
+        "nim": "1941720104",
+        "alamat": "jl.bekasi tengah pluto jaya"
+      },
+      {
+        "id": 3,
+        "nama": "Hafiz Kalam",
+        "nim": "1941720101",
+        "alamat": "jl.raya malang tenggara barat daya"
+      }
+    ]
+}
