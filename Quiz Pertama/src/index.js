@@ -14,7 +14,7 @@ const renderPosts = async () => {
         <h3>${post.nama}</h3>
         <p>${post.nim}</p>
         <p>${post.alamat.slice(0, 200)}...</p>
-        <a href="/details.html">Read more ... </a>
+        <a href="/details.html?id=${post.id}">Read more ... </a>
       </div>
     `
   })
