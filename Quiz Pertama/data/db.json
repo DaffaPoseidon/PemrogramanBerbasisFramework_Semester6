@@ -1,0 +1,28 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "nim": "1941720104",
+            "nama": "Daffa Cahyo Alghifari",
+            "alamat": "Jl.Mawar no 404",
+            "angkatan": "2019",
+            "kerja": "Membuat login page"
+        },
+        {
+            "id": 2,
+            "nim": "1941720101",
+            "nama": "Hafiz Kalam",
+            "alamat": "Jl.Bungur no 27",
+            "angkatan": "2019",
+            "kerja": "Membuat db.json, details.js"
+        },
+        {
+            "id": 3,
+            "nim": "1941720233",
+            "nama": "Nazario Safariesqi",
+            "alamat": "Jl.Semanggi no 75",
+            "angkatan": "2019",
+            "kerja": "Membuat page data kelompok"
+        }
+    ]
+}
