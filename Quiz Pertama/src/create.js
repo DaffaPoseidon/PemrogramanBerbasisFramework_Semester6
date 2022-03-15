@@ -16,6 +16,7 @@ const createPost = async (e) => {
         body: JSON.stringify(doc),
         headers: { 'Content-Type': 'application/json' }
     });
+    window.location.replace('index.html');
 }
 
 form.addEventListener('submit', createPost);
