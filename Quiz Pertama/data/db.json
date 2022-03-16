@@ -23,6 +23,14 @@
       "angkatan": "2019",
       "kerja": "Membuat page data kelompok , Mengimplementasi login menggunakan JSON-Server , fix code cannot GET details.html , fix code cannot GET details.html",
       "id": 3
+    },
+    {
+      "nim": "1941720280",
+      "nama": "tes",
+      "alamat": "tes",
+      "angkatan": "2018",
+      "kerja": "tes",
+      "id": 4
     }
   ]
 }
