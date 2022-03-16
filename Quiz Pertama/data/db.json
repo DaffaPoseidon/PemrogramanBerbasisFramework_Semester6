@@ -5,7 +5,7 @@
       "nama": "Daffa Cahyo Alghifari",
       "alamat": "Jalan Raya Bekasi Tenggara",
       "angkatan": "2019",
-      "kerja": "Membuat login page & Membuat laporan PDF",
+      "kerja": "Membuat login page (FrontEnd), Membuat laporan PDF ",
       "id": 1
     },
     {
@@ -13,7 +13,7 @@
       "nama": "Hafiz Kalam",
       "alamat": "Jl.Bungur no 27",
       "angkatan": "2019",
-      "kerja": "Membuat db.json, details.js , create.js",
+      "kerja": "Membuat db.json, details.js , create.js (Backend)",
       "id": 2
     },
     {
@@ -21,16 +21,8 @@
       "nama": "Nazario Safariesqi ",
       "alamat": "Jalan Raya Setu Metland Cileungsi",
       "angkatan": "2019",
-      "kerja": "Membuat page data kelompok , Mengimplementasi login menggunakan JSON-Server , fix code cannot GET details.html , fix code cannot GET details.html",
+      "kerja": "Membuat page data kelompok , Mengimplementasi login menggunakan JSON-Server , fix code cannot GET details.html , fix code cannot GET details.html (Backend & API)",
       "id": 3
-    },
-    {
-      "nim": "1941720280",
-      "nama": "tes",
-      "alamat": "tes",
-      "angkatan": "2018",
-      "kerja": "tes",
-      "id": 4
     }
   ]
 }
