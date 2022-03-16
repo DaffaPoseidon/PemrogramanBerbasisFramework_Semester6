@@ -2,15 +2,13 @@ const container = document.querySelector('.blogs');
 const searchForm = document.querySelector('.search');
 
 const renderPosts = async (term) => {
-  console.log(term);
-  let uri = 'http://localhost:3000/posts';
+  let uri = 'http://localhost:3000/posts?_sort=nama&_oder=asc';
   if (term) {
-    uri += `&q=${term}`
+    uri += `&q=${term}`;
   }
 
   const res = await fetch(uri);
   const posts = await res.json();
-  console.log(posts);
 
   let template = '';
   posts.forEach(post => {
@@ -22,14 +20,13 @@ const renderPosts = async (term) => {
         <a href="details.html?id=${post.id}">Read more ... </a>
       </div>
     `
-  });
-
+  })
   container.innerHTML = template;
 }
 
-searchForm.addEventListener('submit', async (e) => {
+searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   renderPosts(searchForm.term.value.trim());
 })
 
-window.addEventListener('DOMContentLoaded', async () => renderPosts());
+window.addEventListener('DOMContentLoaded', () => renderPosts());
