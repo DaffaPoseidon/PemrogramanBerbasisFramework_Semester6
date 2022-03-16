@@ -42,7 +42,7 @@ server.post("/api/auth/register", (req, res) => {
             res.status(status).json({status, message});
             return;
     }
-        let data = JSON.parse(data.toString());
+        data = JSON.parse(data.toString());
         let last_item_id = data.users[data.users.length - 1].id;
 
         data.users.push({id: last_item_id + 1 , email:email, password: password });
@@ -61,3 +61,19 @@ server.post("/api/auth/register", (req, res) => {
     const access_token = createToken({email, password});
     res.status(200).json({access_token});
 });
+
+server.post("/api/auth/login", (req, res) => {
+    const {email, password} = req.body;
+    if(isAuthenticated({email,password})) {
+        const status = 401;
+        const message = "Email atau Password Salah";
+        res.status(status).json({status, message});
+        return;
+    }
+    const access_token = createToken({email, password});
+    res.status(200).json({access_token});
+});
+
+server.listen(5000, () => {
+    console.log("Running Fake API JSON-SERVER");
+})
