@@ -1,26 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { render } from '@testing-library/react';
+const container = document.querySelector('.blogs');
+const searchForm = document.querySelector('.search');
 
-ReactDOM.render( <
-    React.StrictMode >
-    <App / >
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+const renderPosts = async (term) => {
+  let uri = 'http://localhost:3000/posts?_sort=nama&_oder=asc';
+  if (term) {
+    uri += `&q=${term}`;
+  }
 
-// class StateFullComponent extends React.Component {
-//     render() {
-//         return <p>State Full Component</p>
-//     }
-// }
+  const res = await fetch(uri);
+  const posts = await res.json();
 
-ReactDOM.render( < StateFullComponent / > , document.getElementById('root'));
+  let template = '';
+  posts.forEach(post => {
+    template += `
+      <div class="post">
+        <p>${post.nim}</p>  
+        <h3>${post.nama}</h3>  
+        <p>${post.alamat.slice(0, 200)}...</p>
+        <a href="details.html?id=${post.id}">Read more ... </a>
+      </div>
+    `
+  })
+  container.innerHTML = template;
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  renderPosts(searchForm.term.value.trim());
+})
+
+window.addEventListener('DOMContentLoaded', () => renderPosts());
