@@ -1,14 +1,8 @@
 import React from "react";
 import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
     Link,
     Outlet
 } from 'react-router-dom';
-import Kuliner from "../Topics/Kuliner";
-import ReviewHotel from "../Topics/ReviewHotel";
-import Travelling from "../Topics/Travelling";
 
 function Topics(){
     return(
