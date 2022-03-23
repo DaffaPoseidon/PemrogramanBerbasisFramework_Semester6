@@ -238,7 +238,7 @@
 
 // function ProtectedPage() {
 //   return(
-    
+
 //     <h3>Protected</h3>
 //   );
 // }
@@ -264,25 +264,15 @@
 // }
 
 // TUUUUUUUUUUUUUUUUGGGGGGGGGGGGGAAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSS
-import React, { useContext, createContext, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useLocation,
-  useNavigate,
-  Navigate,
-  Outlet
-} from "react-router-dom";
-import Main from "./Tugas/main";
-
-export default function Tugas(){
-  return(
-    <Router>
-      <div>
-        <Routes path="/" element={<Main/>}/>
-      </div>
-    </Router>
-  );
-}
+// import React, { useContext, createContext, useState } from "react";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link,
+//   useLocation,
+//   useNavigate,
+//   Navigate,
+//   Outlet
+// } from "react-router-dom";
+// import Main from "./Tugas/main";

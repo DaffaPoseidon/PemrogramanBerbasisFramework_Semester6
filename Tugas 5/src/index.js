@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Main from './Tugas/Main';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* Untuk menjalankan Praktikum */}
+    {/* <App /> */}
+
+    {/* Untuk menjalankan Tugas */}
+    <Main/>
   </React.StrictMode>,
   document.getElementById('root')
 );
