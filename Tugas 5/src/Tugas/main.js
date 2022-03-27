@@ -17,7 +17,6 @@ function Main() {
     <ProvideAuth>
       <Router>
         <div className="body">
-          <AuthButton />
             <header className="header">
               <nav className="navbar">
                 <ul className="nav-list">
@@ -27,12 +26,16 @@ function Main() {
                     <li>
                       <Link to="/protected">Protected Page</Link>
                     </li>
+                    <li>
+                      <AuthButton/>
+                    </li>
                 </ul>
               </nav>
               <div className="content">
                   <img src={gambar_lightning} alt=""/>
               </div>
               <main className="main">
+
                   <div className="content-1">
                       <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" className="search" viewBox="0 0 16 16">
                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -48,7 +51,8 @@ function Main() {
                           paling bergaya di Paris, menampilkan busana eksklusif yang sempurna dikenakan
                           Lightning!
                       </p>
-                      <button><p>SEE COLLECTION</p></button>
+                      <button className="button-1"><p>SEE COLLECTION</p></button>
+                      <LoginPage/>
                   </div>
                   <div className="content-3">
                       <p><i>" Lightning. It flashes bright, then fades away. It can't protect. It can only destroy. "</i></p>
@@ -61,7 +65,7 @@ function Main() {
           </header>
           <Routes>
             <Route path="/public" element={<PublicPage/>}/>
-            <Route path="/login" element={<LoginPage/>}/>
+            {/* <Route path="/login" element={<LoginPage/>}/> */}
             <Route element={<PrivateRoute/>}>
               <Route path="/protected" element={<ProtectedPage/>}/>
             </Route>
@@ -128,19 +132,12 @@ function AuthButton() {
   let auth = useAuth();
 
   return auth.user ? (
-    <p className="welcome">
+    <span>
       Welcome!{" "}
-      <button
-        onClick={() => {
-          auth.signout(() => navigate("/"));
-        }}
-       className="button">
-        Sign out
-      </button>
-    </p>
+    </span>
     
   ) : (
-    <p className="welcome">You are not logged in.</p>
+    <span>You are not logged in.</span>
   );
 }
 
@@ -174,7 +171,14 @@ function LoginPage() {
   return (
     <div className="login">
       <p className="welcome">You must log in to view the page at {from.pathname}</p>
-      <button className="button-2" onClick={login}>Log in</button>
+      {!auth.user ? (<button className="button-2" onClick={login}>Log in</button>) : 
+        (<button
+          onClick={() => {
+            auth.signout(() => navigate("/"));
+          }}
+        className="button">
+          Sign out
+        </button>)}
     </div>
   );
 }

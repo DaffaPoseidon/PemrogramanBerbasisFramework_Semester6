@@ -177,7 +177,7 @@
     line-height: 1.7em;
 }
 
-.header .main .content-2 button {
+.header .main .content-2 .button-1 {
     margin-top: 1.5em;
     background-color: black;
     width: 70%;
@@ -259,7 +259,7 @@
     cursor: pointer;
 }
 
-.button-2 {
+.header .main .content-2 .button-2 {
     margin-left: 0.5em;
     margin-bottom: 2em;
     padding: 0.5em 2em;
