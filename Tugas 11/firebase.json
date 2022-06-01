@@ -1,0 +1,9 @@
+{
+  "firestore": {
+    "rules": "firestone",
+    "indexes": "firestone_index"
+  },
+  "hosting": {
+    "public": "public"
+   }
+}
