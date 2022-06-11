@@ -1,67 +1,189 @@
-.card_style{
+.card_style {
     cursor: pointer;
     transition: .3s;
 }
-  
-  .smalltrash{
-      display: none;
-  }
-  
-  
-  .card_style:hover{
-      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
-  }
-  
-  .iteamsdetails{
-      max-width: 800px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
-  }
-  .items_img{
-      flex: .4;
-  }
-  .items_img img{
-      width: 20rem;
-      border-radius: 5px;
-  }
-  
-  .details{
-      flex: .5;
-  };
-  
-  .rating{
-      background-color: green;
-  }
-  
-  @media (max-width:772px){
-      .iteamsdetails{
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-      }
-  }
-  
-  @media (max-width:450px){
-      .smalltrash{
-          display: block;
-      }
-      .largetrash{
-          display:none;
-      }
-      .emptycart_img{
-          margin-right: 50px;
-      }
-      .smallclose{
-          display: none;
-      }
-  
-      /* individual iteams details */
-     
-      .items_img img{
-          width: 16rem;
-      }
-      
-  }
+
+.smalltrash {
+    display: none;
+}
+
+.card_style:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+}
+
+.iteamsdetails {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+}
+
+.items_img {
+    flex: .4;
+}
+
+.items_img img {
+    width: 20rem;
+    border-radius: 5px;
+}
+
+.details {
+    flex: .5;
+}
+
+;
+.rating {
+    background-color: green;
+}
+
+@media (max-width:772px) {
+    .iteamsdetails {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:450px) {
+    .smalltrash {
+        display: block;
+    }
+    .largetrash {
+        display: none;
+    }
+    .emptycart_img {
+        margin-right: 50px;
+    }
+    .smallclose {
+        display: none;
+    }
+    /* individual iteams details */
+    .items_img img {
+        width: 16rem;
+    }
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/emilflower.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.masthead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+        padding: 0;
+    }
+    .masthead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about-section p {
+    margin-bottom: 5rem;
+}
+
+.novel-section {
+    padding: 10rem 0;
+}
+
+.novel-section .featured-text {
+    padding: 2rem;
+}
+
+@media (min-width: 992px) {
+    .novel-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+    }
+}
+
+.novel-section .novel-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px) {
+    .novel-section .novel-text {
+        padding: 5rem;
+    }
+    .novel-section .novel-text hr {
+        border-color: #64a19d;
+        border-width: 0.25rem;
+        width: 30%;
+    }
+}
+
+.game-section {
+    padding: 10rem 0;
+}
+
+.game-section .featured-text {
+    padding: 2rem;
+}
+
+@media (min-width: 992px) {
+    .game-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+    }
+}
+
+.game-section .game-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px) {
+    .game-section .game-text {
+        padding: 5rem;
+    }
+    .game-section .game-text hr {
+        border-color: #64a19d;
+        border-width: 0.25rem;
+        width: 30%;
+    }
+}
