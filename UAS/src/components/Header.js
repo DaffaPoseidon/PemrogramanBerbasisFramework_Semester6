@@ -61,7 +61,7 @@ const Header = () => {
 
     return (
         <>
-            <Navbar bg="dark" variant="dark" style={{height: "60px"}}>
+            <Navbar bg="dark" variant="dark" style={{ height: "60px" }}>
                 <Container>
                     <NavLink to="/" className="text-decoration-none text-light mx-3">Add to Cart</NavLink>
                     <Nav className="me-auto">
@@ -75,7 +75,7 @@ const Header = () => {
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick}
                     >
-                        <i class="fa-solid fa-cart-shopping text-light" style={{ fontSize: 25, cursor: "pointer" }}></i>
+                        <i className="fa-solid fa-cart-shopping text-light" style={{ fontSize: 25, cursor: "pointer" }}></i>
                     </Badge>
 
                 </Container>
@@ -145,22 +145,22 @@ const Header = () => {
                 </Menu>
             </Navbar>
 
-            <header class="masthead">
-                <div class="container d-flex h-100 align-items-center">
-                    <div class="mx-auto text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">NieR</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Kini Tersedia.</h2>
-                        <a class="btn btn-primary js-scroll-trigger" href="#about">Mulai</a>
+            <header className="masthead">
+                <div className="container d-flex h-100 align-items-center">
+                    <div className="mx-auto text-center">
+                        <h1 className="mx-auto my-0 text-uppercase">NieR</h1>
+                        <h2 className="text-white-50 mx-auto mt-2 mb-5">Kini Tersedia.</h2>
+                        <a className="btn btn-primary js-scroll-trigger" href="#about">Mulai</a>
                     </div>
                 </div>
             </header>
             {/* <!-- About--> */}
-            <section class="about-section text-center" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <img class="img-fluid" src={logo} alt="..." />
-                            <p class="text-white-50">
+            <section className="about-section text-center" id="about">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-8 mx-auto">
+                            <img className="img-fluid-awal" src={logo} alt="..." />
+                            <p className="text-white-50">
                                 NieR: Automata adalah game buatan Platinum Games yang sukses meraih banyak penghargaan dan dinobatkan menjadi salah satu RPG terbaik di tahun rilisnya. NieR: Automata sendiri menceritakan para android yang berjuang melawan robot demi merebut kembali bumi
                                 untuk manusia.
                             </p>
@@ -170,58 +170,58 @@ const Header = () => {
             </section>
 
             {/* <!-- Novel--> */}
-            <section class="novel-section bg-light" id="novel">
-                <div class="container">
+            <section className="novel-section bg-light" id="novel">
+                <div className="container">
                     {/* <!-- Featured novel Row--> */}
-                    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                        <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src={buku0} alt="..." /></div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
+                    <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+                        <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={buku0} alt="..." /></div>
+                        <div className="col-xl-4 col-lg-5">
+                            <div className="featured-text text-center text-lg-left">
                                 <h4>Novel</h4>
-                                <p class="text-black-50 mb-0">NieR: Automata juga tersedia dalam bentuk novel, mendetail cerita dan kejadian yang tersirat dalam gimnya, membuat para pemain lebih immersif dan mengetahui lebih dalam kisahnya.</p>
+                                <p className="text-black-50 mb-0">NieR: Automata juga tersedia dalam bentuk novel, mendetail cerita dan kejadian yang tersirat dalam gimnya, membuat para pemain lebih immersif dan mengetahui lebih dalam kisahnya.</p>
                             </div>
                         </div>
                     </div>
                     {/* <!-- Novel First Row--> */}
-                    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                        <div class="col-lg-6"><img class="img-fluid" src={buku1} alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 novel">
-                                <div class="d-flex h-100">
-                                    <div class="novel-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Long Story Short</h4>
-                                        <p class="mb-0 text-white-50">Novel NieR: Automata pertama yang menceritakan petualangan para karakter dengan sudut pandang lebih rinci.</p>
-                                        <hr class="d-none d-lg-block mb-0 ml-0" />
+                    <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+                        <div className="col-lg-6"><img className="img-fluid" src={buku1} alt="..." /></div>
+                        <div className="col-lg-6">
+                            <div className="bg-black text-center h-100 novel">
+                                <div className="d-flex h-100">
+                                    <div className="novel-text w-100 my-auto text-center text-lg-left">
+                                        <h4 className="text-white">Long Story Short</h4>
+                                        <p className="mb-0 text-white-50">Novel NieR: Automata pertama yang menceritakan petualangan para karakter dengan sudut pandang lebih rinci.</p>
+                                        <hr className="d-none d-lg-block mb-0 ml-0" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* <!-- Novel Second Row--> */}
-                    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                        <div class="col-lg-6"><img class="img-fluid" src={buku2} alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 novel">
-                                <div class="d-flex h-100">
-                                    <div class="novel-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Short Story Long</h4>
-                                        <p class="mb-0 text-white-50">Novel NieR: Automata kedua yang mengisahkan cerita sampingan dan mengungkap lebih banyak misteri yang tidak ada dalam gimnya.</p>
-                                        <hr class="d-none d-lg-block mb-0 ml-0" />
+                    <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+                        <div className="col-lg-6"><img className="img-fluid" src={buku2} alt="..." /></div>
+                        <div className="col-lg-6">
+                            <div className="bg-black text-center h-100 novel">
+                                <div className="d-flex h-100">
+                                    <div className="novel-text w-100 my-auto text-center text-lg-left">
+                                        <h4 className="text-white">Short Story Long</h4>
+                                        <p className="mb-0 text-white-50">Novel NieR: Automata kedua yang mengisahkan cerita sampingan dan mengungkap lebih banyak misteri yang tidak ada dalam gimnya.</p>
+                                        <hr className="d-none d-lg-block mb-0 ml-0" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* <!-- Novel Third Row--> */}
-                    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                        <div class="col-lg-6"><img class="img-fluid" src={buku3} alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 novel">
-                                <div class="d-flex h-100">
-                                    <div class="novel-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">YoRHa Boys</h4>
-                                        <p class="mb-0 text-white-50">Novel NieR: Automata ketiga sekaligus terakhir yang menjelaskan asal-usul model S sekaligus perjuangan mereka di perang tanpa akhir.</p>
-                                        <hr class="d-none d-lg-block mb-0 ml-0" />
+                    <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+                        <div className="col-lg-6"><img className="img-fluid" src={buku3} alt="..." /></div>
+                        <div className="col-lg-6">
+                            <div className="bg-black text-center h-100 novel">
+                                <div className="d-flex h-100">
+                                    <div className="novel-text w-100 my-auto text-center text-lg-left">
+                                        <h4 className="text-white">YoRHa Boys</h4>
+                                        <p className="mb-0 text-white-50">Novel NieR: Automata ketiga sekaligus terakhir yang menjelaskan asal-usul model S sekaligus perjuangan mereka di perang tanpa akhir.</p>
+                                        <hr className="d-none d-lg-block mb-0 ml-0" />
                                     </div>
                                 </div>
                             </div>
@@ -231,28 +231,28 @@ const Header = () => {
             </section>
 
             {/* <!-- Game--> */}
-            <section class="game-section bg-light" id="game">
-                <div class="container">
+            <section className="game-section bg-light" id="game">
+                <div className="container">
                     {/* <!-- Featured game Row--> */}
-                    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
+                    <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+                        <div className="col-xl-4 col-lg-5">
+                            <div className="featured-text text-center text-lg-left">
                                 <h4>Game</h4>
-                                <p class="text-black-50 mb-0">NieR: Automata pertama kali dirilis dalam bentuk gim, yang tersedia untuk Playstation, X-BOX, dan PC</p>
+                                <p className="text-black-50 mb-0">NieR: Automata pertama kali dirilis dalam bentuk gim, yang tersedia untuk Playstation, X-BOX, dan PC</p>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src={game} alt="..." /></div>
+                        <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={game} alt="..." /></div>
 
                     </div>
                     {/* <!-- Game First Row--> */}
-                    <div class="row justify-content-center no-gutters">
-                        <div class="col-lg-6"><img class="img-fluid" src={game1} alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="bg-black text-center h-100 game">
-                                <div class="d-flex h-100">
-                                    <div class="game-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Playstation</h4>
-                                        <p class="mb-0 text-white-50">
+                    <div className="row justify-content-center no-gutters">
+                        <div className="col-lg-6"><img className="img-fluid" src={game1} alt="..." /></div>
+                        <div className="col-lg-6 order-lg-first">
+                            <div className="bg-black text-center h-100 game">
+                                <div className="d-flex h-100">
+                                    <div className="game-text w-100 my-auto text-center text-lg-right">
+                                        <h4 className="text-white">Playstation</h4>
+                                        <p className="mb-0 text-white-50">
                                             <ul>
                                                 <li>+3C3C1D119440927 DLC*</li>
                                                 <li>+Pod Skin and many more Pod Skin</li>
@@ -260,21 +260,21 @@ const Header = () => {
                                                 <li>+PS4™ Dynamic Theme and PS4™ Avatars</li>
                                             </ul>
                                         </p>
-                                        <hr class="d-none d-lg-block mb-0 mr-0" />
+                                        <hr className="d-none d-lg-block mb-0 mr-0" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* <!-- Game Second Row--> */}
-                    <div class="row justify-content-center no-gutters">
-                        <div class="col-lg-6"><img class="img-fluid" src={game2} alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="bg-black text-center h-100 game">
-                                <div class="d-flex h-100">
-                                    <div class="game-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">X-BOX</h4>
-                                        <p class="mb-0 text-white-50">
+                    <div className="row justify-content-center no-gutters">
+                        <div className="col-lg-6"><img className="img-fluid" src={game2} alt="..." /></div>
+                        <div className="col-lg-6 order-lg-first">
+                            <div className="bg-black text-center h-100 game">
+                                <div className="d-flex h-100">
+                                    <div className="game-text w-100 my-auto text-center text-lg-right">
+                                        <h4 className="text-white">X-BOX</h4>
+                                        <p className="mb-0 text-white-50">
                                             <ul>
                                                 <li>+3C3C1D119440927 DLC*</li>
                                                 <li>+Grimoire Weiss Pod and many more Pod Skin</li>
@@ -282,21 +282,21 @@ const Header = () => {
                                                 <li>+Exclusive set of wallpapers</li>
                                             </ul>
                                         </p>
-                                        <hr class="d-none d-lg-block mb-0 mr-0" />
+                                        <hr className="d-none d-lg-block mb-0 mr-0" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* <!-- Game Third Row--> */}
-                    <div class="row justify-content-center no-gutters">
-                        <div class="col-lg-6"><img class="img-fluid" src={game3} alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="bg-black text-center h-100 game">
-                                <div class="d-flex h-100">
-                                    <div class="game-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">PC</h4>
-                                        <p class="mb-0 text-white-50">
+                    <div className="row justify-content-center no-gutters">
+                        <div className="col-lg-6"><img className="img-fluid" src={game3} alt="..." /></div>
+                        <div className="col-lg-6 order-lg-first">
+                            <div className="bg-black text-center h-100 game">
+                                <div className="d-flex h-100">
+                                    <div className="game-text w-100 my-auto text-center text-lg-right">
+                                        <h4 className="text-white">PC</h4>
+                                        <p className="mb-0 text-white-50">
                                             <ul>
                                                 <li>+3C3C1D119440927 DLC*</li>
                                                 <li>+Grimoire Weiss Pod and many more Pod Skin</li>
@@ -304,7 +304,7 @@ const Header = () => {
                                                 <li>+Exclusive set of wallpapers, Upraged Graphics</li>
                                             </ul>
                                         </p>
-                                        <hr class="d-none d-lg-block mb-0 mr-0" />
+                                        <hr className="d-none d-lg-block mb-0 mr-0" />
                                     </div>
                                 </div>
                             </div>
