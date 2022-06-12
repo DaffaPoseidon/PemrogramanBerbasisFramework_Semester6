@@ -31,7 +31,7 @@ const Cards = () => {
               return (
                 <>
                   <Card style={{ width: '22rem', border: "none" }} className="mx-2 mt-4 card_style">
-                    <Card.Img variant="top" src={element.imgdata} style={{ height: "16rem" }} className="mt-3" />
+                    <Card.Img variant="top" src={element.imgdata} style={{ height: "26rem" }} className="mt-3" />
                     <Card.Body>
                       <Card.Title>{element.rname}</Card.Title>
                       <Card.Text>
@@ -96,7 +96,7 @@ const Cards = () => {
           <div className="social d-flex justify-content-center">
             <a className="mx-2" href="https://twitter.com/NieRGame?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i className="fab fa-twitter"></i></a>
             <a className="mx-2" href="https://www.facebook.com/NIERGame"><i className="fab fa-facebook-f"></i></a>
-            <a className="mx-2" href="https://github.com/DaffaPoseidon/TugasAkhirSemester4FrontEndPWL"><i className="fab fa-github"></i></a>
+            <a className="mx-2" href="https://github.com/DaffaPoseidon/PemrogramanBerbasisFramework_Semester6/tree/main/UAS"><i className="fab fa-github"></i></a>
           </div>
         </div>
       </section>
