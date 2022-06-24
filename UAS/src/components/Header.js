@@ -1,4 +1,3 @@
-import React from 'react'
 import buku0 from '../assets/buku0.jpg';
 import buku1 from '../assets/buku1.jpg';
 import buku2 from '../assets/buku2.jpg';
@@ -9,7 +8,10 @@ import game2 from '../assets/game2.gif';
 import game3 from '../assets/game3.gif';
 import logo from '../assets/logo.png';
 
+import React, { useEffect, useState } from 'react'
+
 const Header = () => {
+    
     return (
         <>
             <header className="masthead">
