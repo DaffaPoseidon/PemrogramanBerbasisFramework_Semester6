@@ -8,7 +8,7 @@ import { ADD } from '../redux/actions/action';
 
 const Cards = () => {
 
-  const [data, setData] = useState(Cardsdata);
+  const [data] = useState(Cardsdata);
   // console.log(data);
 
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Cards = () => {
 
   return (
     <>
-      <div className='container mt-3' id='nier-products'>
+      <div className='container mt-3'>
         <h2 className='text-center'>Add to Cart Projects</h2>
 
         <div className="row d-flex justify-content-center align-items-center">
@@ -33,7 +33,7 @@ const Cards = () => {
                     <Card.Body>
                       <Card.Title>{element.rname}</Card.Title>
                       <Card.Text>
-                        Price : $ {element.price}
+                        Price : ₹ {element.price}
                       </Card.Text>
                       <div className="button_div d-flex justify-content-center">
                         <Button variant="primary"
