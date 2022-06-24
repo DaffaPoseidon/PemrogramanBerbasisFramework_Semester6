@@ -20,7 +20,7 @@ const Cards = () => {
 
   return (
     <>
-      <div className='container mt-3'>
+      <div className='container mt-3' id='nier-products'>
         <h2 className='text-center'>Add to Cart Projects</h2>
 
         <div className="row d-flex justify-content-center align-items-center">
@@ -33,7 +33,7 @@ const Cards = () => {
                     <Card.Body>
                       <Card.Title>{element.rname}</Card.Title>
                       <Card.Text>
-                        Price : ₹ {element.price}
+                        Price : $ {element.price}
                       </Card.Text>
                       <div className="button_div d-flex justify-content-center">
                         <Button variant="primary"
