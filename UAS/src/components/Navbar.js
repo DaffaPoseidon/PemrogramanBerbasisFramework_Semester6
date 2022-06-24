@@ -44,10 +44,10 @@ const Navbar = () => {
                         <a href='#about' onClick={closeMenu}>About</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#card' onClick={closeMenu}>Product</a>
+                        <a href='#nier-products' onClick={closeMenu}>Product</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#contact' onClick={closeMenu}>Contact Us</a>
+                        <a href='#contact-nier' onClick={closeMenu}>Contact Us</a>
                     </li>
                     <li className='nav-item'>
                         <a onClick={login} className='cursor-pointer'>Login </a>

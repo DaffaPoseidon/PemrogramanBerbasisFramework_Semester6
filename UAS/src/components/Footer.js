@@ -45,7 +45,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="social d-flex justify-content-center">
+          <div className="social d-flex justify-content-center" id="contact-nier">
             <a className="mx-2" href="https://twitter.com/NieRGame?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i className="fab fa-twitter"></i></a>
             <a className="mx-2" href="https://www.facebook.com/NIERGame"><i className="fab fa-facebook-f"></i></a>
             <a className="mx-2" href="https://github.com/DaffaPoseidon/PemrogramanBerbasisFramework_Semester6/tree/main/UAS"><i className="fab fa-github"></i></a>
